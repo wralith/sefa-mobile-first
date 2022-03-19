@@ -13,8 +13,9 @@
 :root {
   --color-bg: #292827;
   --color-bg-variant: #444342;
+  --color-bg-gradient: rgb(35, 34, 39);
   --color-primary: #c09354;
-  --color-primary-variant: rgba(121, 111, 78, 0.4);
+  --color-primary-variant: rgba(0, 0, 0, 0.4);
   --color-light: rgba(255, 255, 255, 0.6);
   --color-white: #ffffff;
   --color-gray: #4d4d4d;
@@ -40,7 +41,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   /* background-image: url("https://www.transparenttextures.com/patterns/black-linen.png"); */
-  background: linear-gradient(35deg, var(--color-bg), rgb(35, 34, 39));
+  background: linear-gradient(35deg, var(--color-bg-gradient), var(--color-bg));
   color: var(--color-white);
   line-height: 1.7;
 }
@@ -150,6 +151,7 @@ header {
   background-color: var(--color-bg-variant);
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
   /* background-attachment: fixed; */
   /* background-position: top;  */
   /* opacity: 0.5; */
@@ -726,4 +728,22 @@ footer a {
   /* display: none; */
   visibility: hidden;
   opacity: 0;
+}
+
+/* Light Mode Switch */
+.light-mode {
+  position: fixed;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+#light-mode {
+  font-size: 1.2rem;
+  /* border-radius: 50%; */
+}
+
+.btn-switch {
+  padding: 0.4rem 0.6rem;
+  background-color: var(--color-bg);
+  border-radius: 0;
 }
