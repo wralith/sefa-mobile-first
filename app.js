@@ -19,10 +19,10 @@ function toggleNightMode() {
     root.style.setProperty("--color-white", "#101010");
     root.style.setProperty("--color-light", "rgba(0, 0, 0, 0.6)");
     darkTheme = false;
-  } else {
+  } else if(!darkTheme) {
     root.style.setProperty("--color-bg", "#292827");
     root.style.setProperty("--color-bg-variant", "#444342");
-    root.style.setProperty("--color-bg-gradient", "rgb(35,34,39");
+    root.style.setProperty("--color-bg-gradient", "rgb(35,34,39)");
     root.style.setProperty("--color-primary", "#c09354");
     root.style.setProperty("--color-white", "#ffffff");
     root.style.setProperty("--color-light", "rgba(255, 255, 255, 0.6)");
