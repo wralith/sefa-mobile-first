@@ -21,7 +21,7 @@
       <h1>Sefa Alan</h1>
       <h5 class="text-light">Avukat</h5>
       <div class="header__btn">
-        <a href="#contact" class="btn btn-primary">Hemen iletişime geç</a>
+        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-phone header-icon"></i> İletişime geç</a>
       </div>
       <div class="header__socials">
         <a href="#" target="-blank"><i class="fa-brands fa-twitter"></i></a>
@@ -31,10 +31,10 @@
       </div>
 
       <div class="header__img">
-        <img src="https://pngimg.com/uploads/donald_trump/donald_trump_PNG11.png" alt="header-img">
+        <img src="assets/img/ankara.jpg" alt="header-img">
       </div>
 
-      <a href="#contact" class="scrolldown">Aşağı Kaydır <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#footer" class="scrolldown">Aşağı Kaydır <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     
   </header>
@@ -60,14 +60,14 @@
     <div class="container about__container">
       <div class="about__me">
         <div class="about__me-img">
-          <img src="https://cdnntr1.img.sputniknews.com/img/07e5/01/0e/1043579054_346:0:1711:1502_1920x0_80_0_0_ad7e8e98a258b768ed444c848d266e5c.jpg" alt="about-img">
+          <img src="https://cdn.create.vista.com/api/media/small/3195825/stock-photo-gavel" alt="about-img">
         </div>
       </div>
 
       <div class="about__content">
         <div class="about__cards">
           <article class="about__card">
-            <i class="fa-solid fa-book-open-reader"></i>
+            <i class="fa-solid fa-book-open-reader about__icon"></i>
             <h5>Tecrübe</h5>
             <small>Lorem, ipsum dolor.</small>
           </article>
@@ -293,12 +293,68 @@
     </div>
   </section>
 
-  
 
   
-  <!-- <p>Testiomanlias</p> -->
+
   <!-- <p>Contact</p> -->
+  <section class="contact"  id="contact">
+    <h5>Hemen iletişime geç</h5>
+    <h2>İletişim Yöntemleri</h2>
+
+    <div class="container contact__container">
+      <div class="contact__options">
+        <article class="contact__option">
+          <i class="fa-solid fa-envelope contact__option-icon"></i>
+          <h4>E-mail</h4>
+          <h5>xxxxx@examplemail.com</h5>
+          <a href="mailto:xxxxx@examplemail.com" target="_blank">E-Mail Gönder</a>
+        </article>
+        <article class="contact__option">
+          <i class="fa-brands fa-facebook-messenger contact__option-icon"></i>
+          <h4>Facebook Messenger</h4>
+          <h5>xxxxx@examplemail.com</h5>
+          <a href="https://m.me/sefa.alan.125" target="_blank">Facebook'tan Mesaj Gönder</a>
+        </article>
+        <article class="contact__option">
+          <i class="fa-brands fa-whatsapp contact__option-icon"></i>
+          <h4>Whatsapp</h4>
+          <h5>+123456789</h5>
+          <a href="https://api.whatsapp.com/send?phone=901111111111" target="_blank">Whatsapp'tan Mesaj Gönder</a>
+        </article>
+      </div>
+      <form action="mailto:xxxxx@examplemail.com" method="GET">
+        <input type="text" name="subject" placeholder="İsim ve Soyisim" required />
+        <input type="text" name="body" type="text" placeholder="Telefon Numaranız" required />
+        <textarea name="body" rows="7" placeholder="Mesajınızı Yazınız." required></textarea>
+        <button id="sendmail" type="submit" class="btn btn-primary">Gönder</button>
+      </form>
+    </div>
+  </section>
   <!-- <p>Footer</p> -->
+  <footer>
+    <a id="footer" href="#" class="footer__logo">Sefa Alan</a>
+
+    <ul class="permalinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">Hakkımda</a></li>
+      <li><a href="#experience">Çalışma Alanları</a></li>
+      <li><a href="#services">Hizmetler</a></li>
+      <li><a href="#contact">İletişim Bilgileri</a></li>
+      <li><a href="#contact">Hemen Mesaj Gönder</a></li>
+    </ul>
+
+    <div class="footer__socials">
+      <a href="#" target="-blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" target="-blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" target="-blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" target="-blank"><i class="fa-solid fa-envelope"></i></i></a>
+    </div>
+
+    <div class="footer__copyright">Sefa Alan, Tüm Hakları Saklıdır.</div>
+  </footer>
+
+  <!-- JavaScript -->
+  <!-- <script src="index.js"></script> -->
 </body>
 
 </html>
