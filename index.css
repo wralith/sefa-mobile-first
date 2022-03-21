@@ -299,7 +299,8 @@ nav a:focus {
 #about::before {
   content: "";
   background-image: url("https://cdn.create.vista.com/api/media/small/3195825/stock-photo-gavel");
-  background-size: cover;
+  background-size: cover; 
+  background-position: center;
   background-attachment: fixed;
   position: absolute;
   width: 100%;
@@ -501,7 +502,7 @@ nav a:focus {
   opacity: 0.3;
   top: 0;
   left: 0;
-  pointer-events: none
+  pointer-events: none;
 }
 
 .services__container {
@@ -634,7 +635,7 @@ input, textarea {
   border: 2px solid var(--color-primary-variant);
   font: inherit;
   resize: none;
-  color: white;
+  color: var(--color-white);
 }
 
 /* Contact Tablet */
@@ -779,6 +780,7 @@ footer a {
   position: fixed;
   right: 0.5rem;
   top: 0.5rem;
+  z-index: 5;
 }
 
 #light-mode {
