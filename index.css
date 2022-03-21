@@ -11,8 +11,9 @@
 }
 
 :root {
-  --color-bg: #292827;
-  --color-bg-variant: #444342;
+  --color-bg: rgb(41, 40, 39);
+  --color-bg-rgb: 41, 40, 39;
+  --color-bg-variant: rgb(68, 67, 66);
   --color-bg-gradient: rgb(35, 34, 39);
   --color-primary: #c09354;
   --color-primary-variant: rgba(0, 0, 0, 0.4);
@@ -42,6 +43,7 @@ body {
   font-family: "Poppins", sans-serif;
   /* background-image: url("https://www.transparenttextures.com/patterns/black-linen.png"); */
   background: linear-gradient(35deg, var(--color-bg-gradient), var(--color-bg));
+  /* background-color: rgba(var(--color-bg-rgb), 0.8); */
   color: var(--color-white);
   line-height: 1.7;
 }
@@ -277,7 +279,7 @@ nav a {
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-white);
+  color: #ffffff;
   font-size: 1.1rem;
 }
 
@@ -287,7 +289,29 @@ nav a:focus {
 
 /* About Section */
 
+#about {
+  margin-top: 0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  background-image: url("https://cdn.create.vista.com/api/media/small/3195825/stock-photo-gavel");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  pointer-events: none
+}
+
 .about__container {
+  position: relative;
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
@@ -330,7 +354,7 @@ nav a:focus {
 }
 
 .about__card:hover {
-  background: transparent;
+  background: var(--color-bg-gradient);
   border-color: var(--color-primary);
   cursor: default;
 }
@@ -461,7 +485,27 @@ nav a:focus {
 
 /* Hizmetler Listesi  */
 
+#services {
+  padding-top: 6rem;
+  position: relative;
+}
+
+#services::before {
+  content: "";
+  background-image: url("https://www.cumhuriyet.com.tr/Archive/2021/7/9/1851127/kapak_122920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  pointer-events: none
+}
+
 .services__container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
@@ -478,7 +522,7 @@ nav a:focus {
 }
 
 .service:hover {
-  background: transparent;
+  background: var(--color-bg-gradient);
   border-color: var(--color-primary-variant);
   cursor: default;
 }
